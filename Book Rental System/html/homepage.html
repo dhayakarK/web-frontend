@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Rental Home Page</title>
+    <link rel="stylesheet" href="/Book Rental System/css/tricks.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-heading">Welcome To BookRental Store</h1>
+        
+    </header>
+    <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="/Book Rental System/images/booklist1.png" style="width:20%;height: 30%;display: block">
+              <div class="text">Add Book</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="/Book Rental System/images/search.jpg" style="width:20%;height: 30%;display: block">
+              <div class="text">search book</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="/Book Rental System/images/delete.jpg" style="width:20%;height: 30%;display: block">
+              <div class="text">delete book</div>
+            </div>
+            <div class="mySlides fade">
+                    <div class="numbertext">4/ 5</div>
+                    <img src="/Book Rental System/images/issue,return.png" style="width:20%;height: 30%;display: block">
+                    <div class="text">issue and return books</div>
+             </div>
+             <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="/Book Rental System/images/borrower.PNG" style="width:20%;height: 30%;display: block">
+                    <div class="text">borrower Details</div>
+            </div>
+            
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </div>
+         
+         <ul>
+           <li><a href="addbook.html" class="active">Add book</a></li>
+           <li><a href="searchbybookName.html">SearchByBookName</a></li>
+           <li><a href="SearchByAuthorName.html">SearchByBookAuthorName</a></li>
+           <li><a href="delete.html">DeleteBook</a></li>
+           <li><a href="rentbook.html">RentBook</a></li>
+           <li><a href="#">ListOfBooks</a></li>
+           <li><a href="returnbook.html">ReturnBook</a></li>
+           <li><a href="#">Exit</a></li>
+         </ul>
+    
+
+
+
+
+</body>
+</html>
