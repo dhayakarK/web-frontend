@@ -24,6 +24,11 @@ img {vertical-align: middle;height: 50%;}
   border: 1px solid blue;
   padding: 30px;
 }
+.Homepage{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
 
 /* Caption text */
 .text {
@@ -82,38 +87,46 @@ img {vertical-align: middle;height: 50%;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #f1f1f1;
-  height: 100%;
-  overflow: auto;
-  position: relative;
-  width: 25%;
-  padding: 18px;
-}
- li a {
-  padding: 15px;
-  text-decoration: none;
-  display: block;
-  color: #000000;
-}
-li a.active{
-  background-color: #4caf50;
-  color: white;
-}
-li a:active:hover:not(.active)
-{
-  background-color: #555;
-  color: white;
-}
-li a:hover{
-  background-color: aqua;
-}
-.column{
-  width: 75%;
-  display:block;
-  
-}
 
+.navigation{
+  width: 25%;
+  padding:10px;
+  height: 400px;
+  background-color:green;
+}
+.description{
+  background-color: #f1f1f1;
+  padding: 50px;
+  width:75%;
+  height: 400px;
+}
+div.add{
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  margin: 2px;
+  width: 100%;
+}
+div.add:hover{
+  background-color:yellow;
+}
+div.Search-by-BookTitle{
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  margin: 2px;
+  width: 100%;
+}
+div.Search-by-BookTitle:hover{
+  background-color:yellow;
+}
+div.Search-by-BookAuthorName{
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  margin:2px;
+  width: 100%;
+}
+div.Search-by-BookAuthorName:hover{
+  background-color:yellow;
+}
